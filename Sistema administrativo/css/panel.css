@@ -1,0 +1,380 @@
+body {
+	font-family: 'open sans';
+	background: #0A2440
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.btnDelete, .modificar, .guardar, .exit {
+	width: 200px;
+	border: none;
+	height: 70%;
+	border-radius: 8px;
+	background-color: #0A2440;
+	color: white;
+	cursor: pointer;
+	transition: transform .3s;
+}
+
+.exit {
+	background: #f7f7f7;
+	color: #0A2440;
+	font-size: 1.3em;
+	width: 100px;
+}
+
+.persona-roll--active {
+	animation: both-persona 1s 2;
+}
+
+@keyframes both-persona {
+	25% {
+		outline: 6px dashed #0A2440;
+		outline-offset: -25px;
+	}
+	100% {
+		outline: 6px dashed #0A2440;
+		outline-offset: -10px;
+	}
+}
+
+.btnDelete:hover {
+	transform: scale(1.1);
+	transition: transform .3s;
+}
+
+.header {
+	background-color: rgb(12, 25, 46,1);
+	justify-content: flex-end;
+	width: 100%;
+	height: 80px;
+	z-index: 10;
+	display: flex;
+
+}
+
+.header .datos-user {
+	width: 400px;
+	height: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: row;
+}
+
+.datos-user #name-user {
+	font-size: 1.4em;
+}
+
+.navbar {
+	width: 430px;
+	max-height: 1350px;
+	
+	background: rgb(12, 25, 46,0)
+
+}
+
+.btn-menu {
+	width: 80px;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 2em;
+	position: fixed;
+	top: 500px;
+	right: 40px;
+	background-color:rgb(12, 25, 46);
+	border-radius: 50%;
+}
+
+.btn-menu img, img {
+	width: 100%;
+	height: 100%;
+	filter: invert(1);
+	cursor: pointer;
+	display: block;
+}
+
+.menu {
+	width: 700px;
+	height: 700px;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	align-items: center;
+	justify-content: space-around;
+	margin: 0;
+	list-style: none;
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	
+}
+
+@keyframes beat {
+	0% {
+		width: 0%;
+	}
+	25% {
+		width: 25%;
+	}
+	50% {
+		width: 50%;
+	}
+}
+
+.abierto {
+	position: fixed;
+	top: 0;
+	display: flex;
+	background-color: rgb(12, 25, 46,.67);
+	animation: beat .3s;
+}
+
+.menu__item {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	/*justify-content: center;*/
+	align-items: center;
+	flex-direction: row;
+}
+
+.icon-container {
+	width: 50px;
+	height: 50px;
+	align-self: flex-start;
+	margin-right: 2em;
+	margin-left: 3em;
+
+}
+
+.icon-container img {
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	filter: invert(1);
+
+}
+
+.menu__item a{
+	text-decoration: none;
+	font-size: 1.5em;
+	color: white;
+	font-family: Montserrat;
+	font-weight: 300;
+}
+
+/* MAIN */
+
+.container {
+	width: 95%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 2em auto
+}
+
+.titles {
+	font-size: 3em;
+	font-weight: lighter;
+	color: white;
+	align-self: flex-start;
+	margin-left: .7em;
+	font-family: 'Montserrat'
+}
+
+.datos-container {
+	width: 100%;
+	height: 250px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.datos-container__item {
+	width: 23%;
+	height: 150px;
+	background-color:#f7f7f7;
+	border-radius: 8px;
+	display: flex;
+}
+
+.item-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	/*justify-content: space-evenly;
+	align-items: center;*/
+	background-color: /*#71EFA3*/
+}
+
+p {
+	color: white;
+}
+
+.c1 {
+	width: 100%;
+	height: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 1.3em;
+}
+
+.c2 {
+	width: 100%;
+	padding-right: 1.3em;
+}
+.c2 h2 {
+	text-align: right;
+	font-weight: 400;
+	color: white;
+	font-size: 1.2em;
+	letter-spacing: 1.3px;
+	font-family: Montserrat
+}
+.c1 .img-container, .item-container .img-container {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*border: 1px solid black;*/
+}
+
+.c1 p {
+	font-size: 4.5em;
+	font-weight: lighter;
+	color: white;
+}
+
+
+.I2 {
+	background-color: #57B4FA;
+}
+
+.I3 {
+	background: #60D762
+}
+
+.I4 {
+	background: #7562EA
+}
+
+.I5 {
+	background: #FE625B
+}
+
+
+.item-container h2, .item-container p {
+	margin: 0;
+}
+
+.img-container img {
+	cursor: default;
+}
+
+
+
+
+img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+/* Historial de usuarios */
+
+.history-users {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 3em 0;
+}
+
+.history-users .card-header,.rolls-container .card-header {
+	width: 100%;
+	height: 80px;
+	background-color: rgb(12, 25, 46);
+	display: flex;
+	flex-direction: row;
+	border-radius: 8px 8px 0 0;
+}
+
+.history-users .card-header .item, .rolls-container .card-header .item {
+	width: 33.33%;
+	height: 100%;
+	color: white;
+	width: 33.33%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.7em;
+	font-weight: 300;
+	color:white;
+	font-family:Montserrat;
+}
+
+.history-users .card-body, .rolls-container .card-body {
+	width: 100%;
+	max-height: 500px;
+	background-color: white;
+	overflow-y: auto
+}
+
+.card-body .persona {
+	width: 100%;
+	height: 100px;
+	border: .3px solid grey;
+	display: flex;
+	flex-direction: row;
+}
+
+.persona .persona__item {
+	width: 33%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5em;
+}
+
+/* ROLLS*/
+
+.rolls-container {
+	margin: 3em 0;
+	width: 100%;
+	height: 100%;
+}
+
+.rolls-container .card-header {
+	width: 100%;
+	height: 80px;
+	background-color: rgb(12, 25, 46);
+}
+
+.persona-opciones button:hover {
+	transform: scale(1.1);
+	transition: transform .3s
+}
+
+.cont {
+	margin-bottom: 7em;
+}
+
+h2 {
+	margin: 0;
+}

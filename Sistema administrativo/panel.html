@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/panel.css">
+	<title>Panel de Control</title>
+</head>
+<body>
+	<header class="header">
+		<nav class="navbar">
+			<div class="btn-menu">
+				<img src="assets/img/Tablero.png" alt="" id="btn" title="Menu">
+			</div>
+			<ul class="menu">
+				<li class="menu__item">
+					<div class="icon-container"><img src="assets/img/Tablero.png" alt=""></div>
+					<a href="#panel-control" id="pControl">Panel de Control</a></li>
+				<li class="menu__item">
+					<div class="icon-container"><img src="assets/img/historial.png" alt=""></div>
+					<a href="#history" id="hUsers">Historial de Usuarios</a>
+				</li>
+				<li class="menu__item">
+					<div class="icon-container"><img src="assets/img/rolls.png" alt=""></div>
+					<a href="#rolls">Rolls</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="datos-user">
+			<p id="name-user"></p>
+			<button class="exit">Salir</button>
+		</div>
+	</header>
+	<main class="container">
+		<h2 class="titles" id="panel-control">TABLERO</h2>
+		<div class="datos-container cont" >
+			<div class="datos-container__item">
+				<div class="item-container I2">
+					<div class="c1">
+						<div class="img-container">
+							<img src="assets/img/user.png" alt="">
+						</div>
+						<p id="numUsers"></p>
+					</div>
+					<div class="c2">
+						<h2>USUARIOS TOTALES</h2>
+					</div>
+					
+				</div>
+				
+			</div>
+			<div class="datos-container__item">
+				<div class="item-container I3">
+					<div class="c1">
+						<div class="img-container">
+							<img src="assets/img/rolls.png" alt="">
+						</div>
+						<p id="numRolls"></p>
+					</div>
+					<div class="c2">
+						<h2>ROLES TOTALES</h2>
+					</div>
+				</div>
+				
+			</div>
+			<div class="datos-container__item">
+				<div class="item-container I4">
+					<div class="c1">
+						<div class="img-container">
+							<img src="assets/img/user.png" alt="">
+						</div>
+						<p id="numPermisos">0</p>
+					</div>
+					<div class="c2">
+						<h2>PERMISOS TOTALES</h2>
+					</div>
+				</div>
+				
+			</div>
+			<div class="datos-container__item">
+				<div class="item-container I5">
+					<div class="c1">
+						<div class="img-container">
+							<img src="assets/img/eliminados.png" alt="">
+						</div>
+						<p id="numDeleted"></p>
+					</div>
+					<div class="c2">
+						<h2>USUARIOS ELIMINADOS</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<h2 class="titles" id="history">HISTORIAL DE USUARIOS</h2>
+		<div class="history-users cont">
+			<div class="card-header">
+				<div class="item">NOMBRE</div>
+				<div class="item">FECHA DE INGRESO</div>
+				<div class="item">OPCION</div>
+			</div>
+			<div class="card-body"></div>
+		</div>
+		<h2 class="titles" id="rolls">ROLES</h2>
+		<div class="rolls-container cont">
+			<div class="card-header">
+				<div class="item">NOMBRE</div>
+				<div class="item">ROLL</div>
+				<div class="item">OPCION</div>
+			</div>
+			<div class="bodyRolls card-body"></div>
+		</div>
+	</main>
+	<script src="js/panel.js"></script>
+</body>
+</html>

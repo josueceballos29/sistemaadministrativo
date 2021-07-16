@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<title>Sistema administrativo laradmin</title>
+</head>
+<body>
+	<header class="header"><h1>AdminApp</h1></header>
+	<main class="container">
+		<div class="card-body">
+			<div class="title"><h2 class="card-body__title">Registrarse</h2></div>
+			<div class="principal">
+				<h3>Registra tu cuenta</h3>
+				<div class="controls">
+					<form class="form">
+						<div class="name">
+							<input type="text" placeholder="Usuario" id="userName">
+							<p id="userError"></p>
+						</div>
+						<div class="password">
+							<input type="password" placeholder="Contraseña" id="userPass">
+						</div>
+						<input type="submit" value="Iniciar Seccion" class="sbt">
+
+					</form>
+				</div>
+				<a href="login.html">¿Ya tienes cuenta? Ingresa Aqui</a>
+				<p id="errors"></p>
+			</div>
+		</div>
+	</main>
+	<!-- Scripts -->
+	<script type="text/javascript" src="js/register.js"></script>
+</body>
+</html>

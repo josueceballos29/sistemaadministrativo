@@ -1,0 +1,26 @@
+Sistema administrativo laradmin
+
+* Ingreso de usuarios
+* Roles
+* Asignacion de permisos
+* Historial de personas que han logeado en el sistema
+* Login
+
+Pasos para hacer el proyecto:
+
+Completado (9/10)
+
+1 - Hacer el login (x)
+2 - Verificar los datos del login (x)
+3 - Guardar los datos de los usuarios (x)
+4 - A la primera persona que se loguee es el admin (X)
+5 - Si es un administrador mostrarle la interfaz administrativa (X)
+6 - Hacer un listado de todas las personas con sus datos que se han logueado en el sistema  (x)
+7 - Hacer un panel de control en donde muestre el numero de:
+	A - personas logeadas (x)
+	B - roles (x)
+	C - permisos 
+	D - usuarios eliminados (x)
+8 - Hacer una opcion de modificar roles (x)
+9 - Hacer una opcion de eliminar persona (x)
+10 - Hacer una funcion para asignacion de permisos
